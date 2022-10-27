@@ -1,0 +1,595 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width:100%;
+	height:1200px;
+	margin:0px;
+	padding:0px;
+  background-color: #fff;   
+}
+
+header {
+  
+}
+
+h1, h2,h3,h4{
+  font-family: 'Circular Std';
+  font-style: normal;
+}
+
+/* Contenu - Mobile en Premier */
+div.container {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+   
+}
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+ }
+
+span.nav-toggle {
+  position: absolute;
+  font-size: 30px;
+  display: inline-block;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  margin: 30px 0 30px 0;
+  display: inline-block;  
+}
+
+.logo img {
+  width: 225px;
+  height: 121px;
+}
+
+ul {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  padding: 5px 50px;
+  font-family: 'Circular Std';
+  font-style: medium;
+
+}
+
+ul li:first-child{
+  margin-top: 0;
+}
+
+ul li:hover {
+  opacity: 0.5;
+  color: rgb(7, 189, 122); 
+}
+
+.active{
+  display: flex;
+}
+
+/* CSS - Carrousel */
+
+.owl-carousel {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+}
+
+section .owl-carousel .item { 
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;    
+}
+
+/* Text Banner */
+
+.text-banner {
+  position: absolute;
+  width: 700px;
+  font-size: 2.25em;
+  margin-left: 20px;
+  bottom: 150px; 
+  text-transform: uppercase;
+  color: white;
+  z-index: 10;   
+}
+
+
+.btn {
+  margin-top: 10px;
+  padding: 20px;
+  background: rgba(15, 215, 115, 0.5);
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.4em;
+}
+
+
+/*---------------------------------------
+      Section 02 - À Propos           
+  -----------------------------------------*/
+
+
+section.bio {
+  display: flex;
+  justify-content: space-around; 
+  padding: 50px; 
+}
+
+section .photo img {
+  max-width: 300px;
+  height: 300px;
+  background-size: cover;
+  transform: translate(-30px,0px);
+  clip-path: circle(46.5% at 50% 50%);
+  -webkit-clip-path: circle(45% at 50% 50%); 
+}
+
+.text-bio h1 {
+  color: rgb(23, 219, 160);
+  font-size: 1.56em;
+  text-shadow: 2px 2px 2px #F7F7F7;
+  margin-bottom: 20px;
+}
+
+.text-bio {
+  max-width: 460px;
+  line-height: 1.4em;
+  font-size: 1.55em;
+  text-align: left;
+}
+
+  
+      /*---------------------------------------
+      Section 02 - PORTIFÓLIO          
+  -----------------------------------------*/             
+ 
+
+  #blog {
+    background: #f0f0f0;
+  }
+
+  #blog-header,
+  #blog-detail {
+    text-align: left;
+  }
+
+  #blog-header {
+    background: url('../images/blog-header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 65vh;
+    color: #ffffff;
+    position: relative;
+    padding-top: 12em;
+  }
+
+  #blog-header h2 {
+    color: #ffffff;    
+  }
+
+  .section-title h2{
+    text-align: center;
+    padding: 30px;
+  }
+
+  .blog-thumb {
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-align: left;
+    margin-bottom: 30px;
+    height: 350px;
+  }
+
+  .media.blog-thumb .media-left {
+    width: 45%;
+  }
+
+  .blog-thumb small {
+    color: #ce3232;
+    font-weight: 500;
+    display: block;
+  }
+
+  .blog-thumb small .fa {
+    margin-right: 5px;
+  }
+
+  .blog-thumb h4 {
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+
+  #blog-detail h2 {
+    padding: 25px 0 10px 0;
+  }
+
+  .blog-info {
+    padding: 75px 25px;
+  }
+
+  .blog-info h3 {
+    margin: 0;
+    padding: 8px 0 6px 0;
+    text-transform: capitalize;
+  }
+
+  .blog-info .section-btn {
+    background: #f0f0f0;
+    color: #393939;
+    margin-top: 20px;
+  }
+
+  .blog-info .section-btn:hover {
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+  }
+
+  .blog-thumb ul {
+    margin: 32px 12px 22px 0px;
+  }
+
+  .blog-thumb ul li {
+    list-style: square;
+    font-weight: normal;
+    padding: 4px 12px 4px 0px;
+  }
+
+  .blog-social-share {
+    text-align: center;
+    padding-top: 22px;
+  }
+
+  .blog-social-share .btn {
+    border-radius: 100px;
+    border: none;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 20px 6px;
+    padding: 10px 16px;
+  }
+
+  .blog-social-share .btn-primary {
+    background: #3b5998;
+  }
+
+  .blog-social-share .btn-success {
+    background: #1da1f2;
+  }
+
+  .blog-social-share .btn-danger {
+    background: #dd4b39;
+  }
+
+  .blog-social-share a .fa {
+    padding-right: 4px;
+  }
+
+  .blog-ads {
+    background: #f9f9f9;
+    border-right: 4px solid #2b2b2b;
+    padding: 42px;
+    text-align: center;
+    margin: 26px 0 26px 0;
+  }
+
+  .blog-ads h4 {
+    font-size: 18px;
+  }
+
+
+/*---------------------------------------
+      Section 04 - SERVICES          
+  -----------------------------------------*/
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 90px auto;
+  text-align: center;
+  background-color: white;
+}
+
+.services-container h2 {
+  font-size: 20px;
+  font-family: 'Circular Std';
+
+}
+
+.services-container img{
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  
+}
+
+
+
+
+
+/*---------------------------------------
+     FOOTER              
+  -----------------------------------------*/
+
+/* Contact Section
+--------------------------------*/
+section.color {
+  width: 100%;
+  background: #eaeaea;
+
+}
+
+#contact {
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#contact .contact-about h3 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #1dc8cd;
+}
+
+#contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+}
+
+#contact .social-links {
+  padding-bottom: 20px;
+}
+
+#contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #1dc8cd;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #1dc8cd;
+}
+
+#contact .social-links a:hover {
+  background: #1dc8cd;
+  color: #fff;
+}
+
+#contact .info {
+  color: #333333;
+}
+
+#contact .info i {
+  font-size: 32px;
+  color: #1dc8cd;
+  float: left;
+  line-height: 1;
+}
+
+#contact .info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+#contact .form #sendmessage {
+  color: #1dc8cd;
+  border: 1px solid #1dc8cd;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+  display: block;
+}
+
+#contact .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .form input, #contact .form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+#contact .form button[type="submit"] {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  border: 0;
+  border-radius: 20px;
+  padding: 8px 30px;
+  color: #fff;
+}
+
+#contact .form button[type="submit"]:hover {
+  cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+  margin: 10px 0;
+}
+
+.copy {
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  color: #333;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.copy p{
+  text-align: center;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  color: #fff;
+  padding: 2px 20px 8px 20px;
+  font-size: 16px;
+  border-radius: 4px 4px 0 0;
+  right: 15px;
+  bottom: 0;
+  transition: none;
+}
+
+
+
+
+
+
+
+/*---------------------------------------
+      MENU - MOBILE First           
+  -----------------------------------------*/
+
+/* responsive */
+
+@media screen and (min-width: 800px) {
+
+/* Menu */
+  nav {
+    height: 70px;
+    flex-direction: row;    
+  }
+
+  nav li{
+    font-family: 'Circular Std';
+    font-size: 18px;
+  }
+
+  .logo {
+    padding-left: 50px;
+    margin: 0;
+    width: 20%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 80%;  
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 70px 0 0;
+    text-align: left;
+    border-bottom-style: none;
+    padding: 0;
+  }
+
+  ul li:first-child{
+  margin-top: auto;
+}
+
+ span.nav-toggle {
+    display: none;
+  }
+
+}
+
+
+/*---------------------------------------
+      Button - Banner - Desktop First          
+  -----------------------------------------*/
+
+
+@media screen and (max-width: 800px) {
+
+.text-banner{
+  display: none;
+}
+
+
+section.bio {
+  display: flex;
+  flex-direction: column; 
+  margin-top: -430px; 
+  text-align: center;
+  border: 2px solid red;
+}
+
+section.bio .photo{
+ width: 100%;
+}
+
+}
